@@ -38,3 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+/* Optimizaciones específicas para pantallas móviles (menores a 600px) */
+@media (max-width: 600px) {
+    /* Apilar las tarjetas de proyectos en una sola columna */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reducir un poco el padding de las secciones para aprovechar el espacio en pantalla */
+    section {
+        padding: 4rem 5%;
+    }
+
+    /* Ajustar el tamaño del texto del Hero para que no se desborde */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-quote {
+        font-size: 1.2rem;
+    }
+}
