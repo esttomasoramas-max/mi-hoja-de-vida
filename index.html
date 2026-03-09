@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomás Oramas Morales | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <h1 class="logo">Tomás O.M.</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Cambiar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h2 class="hero-title">Hola, soy <span>Tomás Oramas Morales</span></h2>
+                <p class="hero-quote">"El que sabe por qué vivir puede soportar casi cualquier cómo."</p>
+                <a href="#contacto" class="btn-primary">Contáctame</a>
+            </div>
+            <div class="hero-image">
+                <img src="perfil.jpeg" alt="Foto de Tomás Oramas Morales">
+            </div>
+        </section>
+
+        <section class="about" id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <article class="about-text">
+                <p>Tengo 14 años, leo para expandir mi mente, vivo la música como una forma de expresión y abrazo la tecnología como la herramienta que cambiará el mundo. Con la determinación que me define, no existe obstáculo, límite ni desafío que me impida convertir cada uno de mis sueños en realidad.</p>
+            </article>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Mis Habilidades</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Un balance entre pensamiento analítico, creatividad y gestión personal.</p>
+            <div class="skills-grid">
+                <article class="skill-item">
+                    <div class="skill-info">
+                        <span>Pensamiento Analítico & Lógico (Tecnología)</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </article>
+                <article class="skill-item">
+                    <div class="skill-info">
+                        <span>Sensibilidad Artística (Música)</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </article>
+                <article class="skill-item">
+                    <div class="skill-info">
+                        <span>Autodisciplina & Resiliencia</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                </article>
+                <article class="skill-item">
+                    <div class="skill-info">
+                        <span>Autoaprendizaje & Curiosidad</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects" id="proyectos">
+            <h2>Áreas de Proyecto</h2>
+            <div class="projects-grid">
+                <article class="card">
+                    <div class="card-icon">🎵</div>
+                    <div class="card-content">
+                        <h3>Tecnología + Música</h3>
+                        <p>Desarrollo de playlists automatizadas con Python, apps web para músicos y visualizadores de audio controlados por Arduino.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📡</div>
+                    <div class="card-content">
+                        <h3>Redes y Cisco</h3>
+                        <p>Simulación de redes escolares en Packet Tracer y diseño de laboratorios de infraestructura con equipos reciclados.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📚</div>
+                    <div class="card-content">
+                        <h3>Conocimiento y Lectura</h3>
+                        <p>Creación de bases de datos de recomendaciones literarias y redacción de reseñas sobre tecnología y ciencia.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-icon">💡</div>
+                    <div class="card-content">
+                        <h3>Impacto Social</h3>
+                        <p>Diseño de recursos educativos gratuitos, talleres de alfabetización digital y proyectos de conectividad para comunidades.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <h2>Conectemos</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Mis Redes</h3>
+                    <p>✉️ <a href="mailto:Oramasmorales@gmail.com">Oramasmorales@gmail.com</a></p>
+                    <p>🐙 <a href="https://github.com/esttomasoramas-max" target="_blank">github.com/esttomasoramas-max</a></p>
+                </div>
+                
+                <div class="contact-container">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="tu@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="4" required placeholder="¿En qué te puedo ayudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Tomás Oramas Morales. Construyendo el futuro línea por línea.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
